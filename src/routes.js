@@ -26,7 +26,7 @@ export const mainRoutes = [
         exact: true,
         component: HomeContainer,
         name: "home",
-        title: "Геолокация фото"
+        title: "Точки Wahoo"
       },
       {
         path: "/travel/labs/wahoo-points/",

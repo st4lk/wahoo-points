@@ -1,4 +1,4 @@
-Service to label images manually
+Add course points for Wahoo Elemnt Roam
 ================================
 
 Run locally

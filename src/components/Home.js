@@ -206,7 +206,11 @@ class Home extends Component {
     const tcxRoot = tcxData.TrainingCenterDatabase;
     const course = tcxRoot.Courses.Course;
     const trackPoints = course.Track.Trackpoint;
-    const coursePoints = course.CoursePoint;
+    if (Symbol.iterator in Object(course.CoursePoint)){
+      const coursePoints = course.CoursePoint;
+    } else {
+      const coursePoints = [course.CoursePoint];
+    }
 
     this.addNotes(coursePoints);
     // alltrails is already doing it, skipping

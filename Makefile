@@ -6,8 +6,6 @@ all: install
 
 install: .install
 .install: package.json
-	@# make sure you have default system's python 2.7, not from venv
-	@# npm package "sass" will use python with print statment (not function) !
 	npm install
 	touch $@
 

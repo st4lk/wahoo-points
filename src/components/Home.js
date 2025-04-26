@@ -252,7 +252,7 @@ class Home extends Component {
           </div>
           <hr />
           <div>
-            <input type='file' accept='.tcx' onChange={this.onFileChange} /> 
+            <input type='file' accept='.gpx' onChange={this.onFileChange} /> 
           </div>
           <TextField
             id="route-title-input"
